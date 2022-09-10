@@ -1,0 +1,309 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body, html
+{
+    margin: 0; padding: 0; height: 100%;
+}
+
+html {
+  font-family: 'ZCOOL XiaoWei', serif !important;
+}
+
+.first {
+  background-image: url(images/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  color: white;
+}
+
+.first h1 {
+  color: white;
+}
+
+.firt a {
+  color: white !important;
+}
+
+.social li {
+  font-size: 17px;
+  display: inline-block;
+  float: right;
+  padding-right: 1%;
+}
+
+li a {
+  color: white !important;
+}
+
+nav {
+  margin-top: 6%;
+  border-top: 1px solid white;
+}
+
+.pink {
+  background-color: #b62b52;
+}
+
+.green {
+  background-color: #769d2a;
+}
+
+.teal {
+  background-color: #01a0a6;
+}
+
+a h2 {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.first .pink,
+.first .pic,
+.first .green {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.green a,
+.pink a,
+.teal a {
+  padding: 6%;
+}
+
+.message {
+  background-color: #222828;
+  color: #fcfdff;
+  padding: 10%;
+}
+
+.message a {
+  color: black !important;
+  background-color: white;
+}
+
+.message a {
+  text-decoration: none !important;
+
+}
+
+.message button {
+  background-color: white;
+  padding: 1%;
+  border-radius: 9%;
+}
+
+.what_to_do h2 {
+  padding: 2%;
+  color: black;
+}
+
+.what_to_do i {
+  font-size: 40px;
+}
+
+.what_to_do div {
+  padding: 3%;
+  color: #222828;
+}
+
+.what_to_do button,
+.four button {
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 3%;
+}
+
+.what_to_do button a {
+  color: #222828;
+  font-variant: all-petite-caps;
+}
+
+.four {
+  background-image: url(images/four.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+
+}
+
+.four h1 {
+  padding: 10%;
+  color: white;
+}
+
+.four button a {
+  color: white;
+  font-variant: all-petite-caps;
+  font-size: 25px;
+}
+
+.letter {
+  background-image: url(images/letter.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: white;
+
+}
+
+.letter button a {
+  color: black;
+}
+
+.letter h1 {
+  padding-top: 10%;
+}
+
+.letter button {
+  background-color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  font-variant-caps: all-petite-caps;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 4%;
+}
+
+
+textarea {
+  width:100%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+}
+
+
+
+
+
+.button-73 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+/* CSS */
+.button-51 {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}

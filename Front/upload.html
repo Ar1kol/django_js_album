@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Upload</title>
+</head>
+
+<body>
+
+    <script>
+        const API_URL = "http://localhost:8000/";
+
+        const UploadImage = () => {
+            console.log(inputImg.files[0]);
+            let myData = {
+                image: inputImg.files[0],
+                type: SelectType.value,
+                title: imgTitle.value,
+                content: content.value,
+            };
+            console.log(myData);
+            axios.post(API_URL + "posts/", myData, {
+                headers: { "content-type": "multipart/form-data" },
+            })
+                .then((res) => {
+                    console.log(res.data);
+                })
+                .catch((err) => console.log(err));
+
+            location.reload();
+        };
+
+
+    </script>
+
+
+    <div class="what_to_do container">
+        <h2 class="text-center">Add your own pictures</h2>
+        <div class="row container">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                <i class="text-center fab fa-pagelines"></i>
+                <h3>Flowers</h3>
+                <p> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                    text
+                </p>
+                <div class="row">
+                    <div class="col-12 text-center">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                <i class="text-center fas fa-coffee"></i>
+                <h3>Cups</h3>
+                <p> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                    text</p>
+                <div class="row">
+                    <div class="col-12 text-center">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                <i class="text-center fas fa-tree"></i>
+                <h3>Nature</h3>
+                <p> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                    text</p>
+                <div class="row">
+                    <div class="col-12 text-center">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="input-group">
+                    <span class="input-group-text">Title</span>
+                    <input id="imgTitle" type="text" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="SelectType">Type options</label>
+                    <select id="SelectType" class="form-select" required>
+                        <option selected>Type</option>
+                        <option value="Cup">Cups</option>
+                        <option value="Flower">Flowers</option>
+                        <option value="Nature">Nature</option>
+                    </select>
+                </div>
+                <div><textarea id="content" placeholder="Description..."></textarea></div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputImg">Choose picture</label>
+                    <input type="file" class="form-control" id="inputImg">
+                </div>
+                <div><button class="button-73" onclick="UploadImage()">Send picture</button></div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
